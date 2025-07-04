@@ -1,11 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
-    <script src="script.js"></script>
+  <meta charset="UTF-8" />
+  <title>CROWN.RAR</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(270deg, #0f0f0f, #00ffcc, #0f0f0f);
+      background-size: 600% 600%;
+      animation: moveGradient 10s ease infinite;
+      overflow: hidden;
+      position: relative;
+      cursor: crosshair;
+    }
+
+    @keyframes moveGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .header {
+      position: absolute;
+      top: 20px;
+      font-size: 1.2rem;
+      color: #888;
+      letter-spacing: 2px;
+      text-shadow: 0 0 5px #00ffcc;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 2.5rem;
+      color: #00ffaa;
+      letter-spacing: 3px;
+      text-shadow: 0 0 15px #00ffaa;
+    }
+
+    a.download-link {
+      font-size: 3rem;
+      color: #00ffcc;
+      text-decoration: none;
+      border: 2px solid #00ffcc;
+      padding: 20px 50px;
+      border-radius: 20px;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 0 20px #00ffcc80;
+    }
+
+    a.download-link:hover {
+      background: #00ffcc;
+      color: #000;
+      box-shadow: 0 0 40px #00ffcc;
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>This is my first website.</p>
+  <div class="header">MADE BY CROWN</div>
+
+  <a class="download-link" href="./CROWN.RAR" download>CROWN.RAR</a>
+
+  <div class="footer">MADE FOR AGHA</div>
 </body>
 </html>
